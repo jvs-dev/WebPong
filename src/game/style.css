@@ -1,0 +1,28 @@
+.main__game {
+    background: linear-gradient(90deg, #202225 0%, #1D1D1F 100%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px var(--white);
+    border-bottom: solid 1px var(--white);
+    overflow: hidden;
+    transition: 0.2s;
+}
+.main__game.light {
+    background: linear-gradient(90deg, #9ea7b6 0%, #ffffff 100%);
+    border-top: solid 1px #000;
+    border-bottom: solid 1px #000;
+    --white: #000;
+    --gray: #000;
+}
+#score {
+    position: absolute;
+    color: var(--white);
+    bottom: 0;
+    right: 0;
+    margin: 20px 20px 0px 0px;
+    font-family: 'Bayon', sans-serif;
+}

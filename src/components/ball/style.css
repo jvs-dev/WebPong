@@ -1,0 +1,7 @@
+.game__ball {
+    border-radius: 100%;
+    background: var(--gray);
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}

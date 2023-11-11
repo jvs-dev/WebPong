@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WebPong</title>
+  <link rel="shortcut icon" href="assets/Frame_1.svg" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bayon&family=Slackey&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="src/game/style.css">
+  <link rel="stylesheet" href="src/components/ball/style.css">
+  <link rel="stylesheet" href="src/components/players/style.css">
+  <link rel="stylesheet" href="src/home/style.css">
+  <link rel="stylesheet" href="src/components/loaders/glitch.css">
+  <link rel="stylesheet" href="src/components/victory/style.css">
+  <link rel="stylesheet" href="src/components/lose/style.css">
+</head>
+
+<body>
+  <main id="main">
+    <section class="main__home" id="home">
+      <h1 class="home__h1">WebPong</h1>
+      <div class="loader" id="glitchLoader">
+        <div data-glitch="Loading..." class="glitch">Loading...</div>
+      </div>
+      <nav class="home__nav" id="homeNav">
+        <ul class="home__ul">
+          <li class="home__li"><button class="home__li__btn" id="playGame">PLAY</button></li>
+          <li class="home__li"><button class="home__li__btn">See more</button></li>
+          <li class="home__li"><button class="home__li__btn">Follow</button></li>
+        </ul>
+      </nav>
+      <p class="home__p">jvs-dev - 2023</p>
+    </section>
+    <div class="main__victoryWindow" id="victoryWindow">
+      <h2 class="victoryWindow__h2">victory</h2>
+      <lord-icon src="https://cdn.lordicon.com/utpmnzxz.json" trigger="in" colors="primary:#fff" delay="500">
+      </lord-icon>
+    </div>
+    <div class="main__loseWindow" id="loseWindow">
+      <h2 class="loseWindow__h2">You lose</h2>
+      <img class="loseWindow__img" src="assets/lose_4372342.png" alt="">
+    </div>
+    <section class="main__game" id="game">
+      <p id="score">Pontos: 0</p>
+      <div class="game__player player--1" id="player1"></div>
+      <div class="game__ball" id="ball"></div>
+      <div class="game__player player--2" id="player2"></div>
+    </section>
+  </main>
+  <script src="https://cdn.lordicon.com/lordicon-1.2.0.js"></script>
+  <script src="src/components/players/script.js"></script>
+  <script src="src/components/ball/script.js"></script>
+  <script src="src/home/script.js"></script>
+</body>
+
+</html>

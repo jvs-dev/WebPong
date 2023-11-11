@@ -1,0 +1,25 @@
+.main__victoryWindow {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #00000079;
+    backdrop-filter: blur(2px);
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 10;
+    transition: 0.2s;
+}
+.victoryWindow__h2 {
+    font-family: 'Bayon', sans-serif;
+    font-size: 100px;
+    margin: 0px;
+    color: var(--white);
+}
+.main__victoryWindow lord-icon {
+    height: 150px;
+    width: 150px;
+}

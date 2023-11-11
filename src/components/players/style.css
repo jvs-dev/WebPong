@@ -1,0 +1,12 @@
+.game__player {
+    width: 8px;
+    background: var(--gray);
+    height: 15%;
+    position: absolute;
+}
+.player--1 {
+    left: 0;
+}
+.player--2 {
+    right: 0;
+}
