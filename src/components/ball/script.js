@@ -116,8 +116,3 @@ function LoseWin(result) {
         }, 1);
     }
 }
-
-let exportTest = (name) => {
-    console.log(name);
-
-}

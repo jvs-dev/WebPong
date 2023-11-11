@@ -1,7 +1,7 @@
-/* let glitchLoader = document.getElementById("glitchLoader") */
-/* let home = document.getElementById("home") */
-/* let homeNav = document.getElementById("homeNav")
-let playGame = document.getElementById("playGame") */
+let glitchLoader = document.getElementById("glitchLoader")
+let home = document.getElementById("home")
+let homeNav = document.getElementById("homeNav")
+let playGame = document.getElementById("playGame")
 
 
 window.addEventListener("load", () => {
@@ -11,7 +11,7 @@ window.addEventListener("load", () => {
         setTimeout(() => {
             glitchLoader.style.display = "none"
             homeNav.style.display = "flex"
-            playGame.addEventListener("click", ()=> {
+            playGame.addEventListener("click", () => {
                 home.style.opacity = "0"
                 home.style.transition = "0.2s"
                 setTimeout(() => {
