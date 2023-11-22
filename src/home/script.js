@@ -1,10 +1,8 @@
-let glitchLoader = document.getElementById("glitchLoader")
-let home = document.getElementById("home")
-let homeNav = document.getElementById("homeNav")
-let playGame = document.getElementById("playGame")
-
-
 window.addEventListener("load", () => {
+    let glitchLoader = document.getElementById("glitchLoader")
+    let home = document.getElementById("home")
+    let homeNav = document.getElementById("homeNav")
+    let playGame = document.getElementById("playGame")
     setTimeout(() => {
         glitchLoader.style.transition = "0.2s"
         glitchLoader.style.opacity = "0"
